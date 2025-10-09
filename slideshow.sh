@@ -12,7 +12,7 @@ currentWall=$(hyprctl hyprpaper listactive)
 monitors=$(hyprctl monitors | grep Monitor | awk '{print $2}')
 # Amount of seconds that need to pass for wallpaper to be changed on ONE monitor (also set manually)
 # Multiply by amount of monitors you have to find out how much time will pass before  a wallpaper will be swapped on THE monitor
-timer=30
+timer=10
 
 # Start an infinite loop
 while true; do
@@ -21,7 +21,7 @@ while true; do
 		# Call out the selected monitor
 		# echo "Changing $display..."
   		# Call out currently active wallpaper on selected monitor
-    		# echo "$(hyprctl hyprpaper listactive | grep DP-3 | basename $(awk '{print $3}')) is on DP-3"
+    	# echo "$(hyprctl hyprpaper listactive | grep $display | basename $(awk '{print $3}')) is on $display"
 		# Pick a random wallpaper from directory (not fool-proof, theoretically can select ANY file)
 		wallpaper=$(find "$wallpaperDir" -type f ! -name "$(basename "$(hyprctl hyprpaper listactive | grep $display)")" | shuf -n 1)
 		# Call out the selected wallpaper
