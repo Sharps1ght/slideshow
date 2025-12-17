@@ -10,7 +10,7 @@ wallpaperDir="$HOME/.config/hypr/Wallpapers/"
 monitors=$(hyprctl monitors | grep Monitor | awk '{print $2}')
 # Amount of seconds that need to pass for wallpaper to be changed on ONE monitor (also set manually)
 # Multiply by amount of monitors you have to find out how much time will pass before  a wallpaper will be swapped on THE monitor
-timer=10
+timer=30
 
 # Start an infinite loop
 while true; do
