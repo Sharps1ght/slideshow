@@ -6,8 +6,6 @@
 
 # Directory where wallpapers are pulled from (must be set manually)
 wallpaperDir="$HOME/.config/hypr/Wallpapers/"
-# Check which wallpapers are currently in use
-currentWall=$(hyprctl hyprpaper listactive)
 # List all monitors connected
 monitors=$(hyprctl monitors | grep Monitor | awk '{print $2}')
 # Amount of seconds that need to pass for wallpaper to be changed on ONE monitor (also set manually)
