@@ -1,6 +1,6 @@
 End me.
 
-These scripts pick a random picture from selected directory as a wallpaper on your connected and set up monitor. You only pick ONE script according to the application you run. So far it is only for hyprland as it only uses 'hyprctl' for now.
+These scripts pick a random picture from selected directory as a wallpaper on your connected and set up monitor. You only pick ONE script according to the application you run. So far the scripts are only written for hyprland as they only use 'hyprctl' for now.
 
 Known issues:
 
